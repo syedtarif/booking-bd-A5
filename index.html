@@ -1,30 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>booking-bd</title>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- daisy ui and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <!-- header part start ---------------------------------------------------->
-    <header>
-        <h1>Booking BD</h1>
-    </header>
-    <!-- header part end -->
+    <!-- header section start ---------------------------------------------------->
+    <header class="container mx-auto mb-32">
+        <!-- navbar part -->
+        <nav class="mb-7 mt-9">
+            <div class="navbar bg-base-100 p-0 m-0">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Chart</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-4xl font-bold ">Booking-BD</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-xl"><a>Home</a></li>
+                        <li class="text-xl"><a>About</a></li>
+                        <li class="text-xl"><a>Destination</a></li>
+                        <li class="text-xl"><a>Chart</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-xl"><span class="color-primary">Bus</span> <img src="./images/bus-icon.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </nav>
 
-    <!-- main part start ---------------------------------------------------->
-    <main>
+        <!-- banner part -->
+        <div class="bg-[url('images/banner.png')] bg-no-repeat bg-cover h-[600px] bg-center relative rounded-[32px]">
+            <div class="text-center space-y-9 bg-[#00000080] bg-cover h-[600px] rounded-[32px]">
+                <h1 class="text-4xl lg:text-6xl font-bold text-white raleway-font pt-28">End-to-End Travel with</h1>
+                <h1 class="text-4xl lg:text-6xl font-bold raleway-font color-primary">Booking-BD</h1>
+                <p class=" text-white">We are providing such a user-friendly bus ticket purchasing
+                    platform for
+                    customers
+                    to search for,
+                    select,
+                    and <br>purchase tickets for various bus routes and destinations in Bangladesh
+                </p>
+                <button class="btn bg-[#1DD100] font-bold text-xl border-0"><a>Buy Tickets</a></button>
+            </div>
+            <div
+                class="flex flex-col lg:flex-row gap-10 lg:gap-24 lg:absolute -bottom-12 w-full justify-center items-center">
+                <div
+                    class="bg-white flex w-full lg:w-[310px] py-4 justify-center border-b-4 border-[#1DD100] rounded-3xl gap-4">
+                    <img src="images/people.png" alt="">
+                    <div>
+                        <h3 class="text-4xl font-bold">500k+</h3>
+                        <p class="text-lg text-gray-500">Registered users</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white flex w-full lg:w-[310px] py-4 justify-center border-b-4 border-[#1DD100] rounded-3xl gap-4">
+                    <img src="images/ticket-cupon.png" alt="">
+                    <div>
+                        <h3 class="text-4xl font-bold">1.7lacks</h3>
+                        <p class="text-lg text-gray-500">Tickets sold</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white flex w-full lg:w-[310px] py-4 justify-center border-b-4 border-[#1DD100] rounded-3xl gap-4">
+                    <img src="images/stoppage.png" alt="">
+                    <div>
+                        <h3 class="text-4xl font-bold">80k+</h3>
+                        <p class="text-lg text-gray-500">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start ---------------------------------------------------->
+    <main class="container mx-auto mb-32">
 
     </main>
-    <!-- main part end -->
+    <!-- main section end -->
 
-    <!-- footer part start ---------------------------------------------------->
+    <!-- footer section start ---------------------------------------------------->
     <footer>
 
     </footer>
-    <!-- footer part end -->
+    <!-- footer section end -->
 </body>
 
 </html>
