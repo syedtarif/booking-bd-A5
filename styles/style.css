@@ -17,3 +17,18 @@
 .bg-color-primary {
     background-color: #1DD100;
 }
+
+/* bg for coupon and info */
+.coupon-bg {
+    background-image: url('../images/cupon-devider.png');
+    background-repeat: no-repeat;
+    background-position: 68% 50%;
+    background-size: contain;
+}
+
+.info-bg {
+    background-image: url('../images/info-devider.png');
+    background-repeat: no-repeat;
+    background-position: 68% 50%;
+    background-size: contain;
+}

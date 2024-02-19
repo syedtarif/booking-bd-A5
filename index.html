@@ -36,7 +36,7 @@
                             <li><a>Chart</a></li>
                         </ul>
                     </div>
-                    <a class="text-4xl font-bold ">Booking-BD</a>
+                    <a class="text-2xl lg:text-4xl font-bold ">Booking-BD</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -54,8 +54,9 @@
         </nav>
 
         <!-- banner part -->
-        <div class="bg-[url('images/banner.png')] bg-no-repeat bg-cover h-[600px] bg-center relative rounded-[32px]">
-            <div class="text-center space-y-9 bg-[#00000080] bg-cover h-[600px] rounded-[32px]">
+        <div
+            class="bg-[url('images/banner.png')] bg-no-repeat bg-cover h-[900px] lg:h-[600px] bg-center relative rounded-[32px]">
+            <div class="text-center space-y-9 bg-[#00000080] bg-cover h-[900px] lg:h-[600px] rounded-[32px]">
                 <h1 class="text-4xl lg:text-6xl font-bold text-white raleway-font pt-28">End-to-End Travel with</h1>
                 <h1 class="text-4xl lg:text-6xl font-bold raleway-font color-primary">Booking-BD</h1>
                 <p class=" text-white">We are providing such a user-friendly bus ticket purchasing
@@ -65,32 +66,34 @@
                     select,
                     and <br>purchase tickets for various bus routes and destinations in Bangladesh
                 </p>
-                <button class="btn bg-[#1DD100] font-bold text-xl border-0"><a>Buy Tickets</a></button>
+                <button class="btn bg-[#1DD100] font-bold text-xl border-0"><a href="#booking-seats">Buy
+                        Tickets</a>
+                </button>
             </div>
             <div
-                class="flex flex-col lg:flex-row gap-10 lg:gap-24 lg:absolute -bottom-12 w-full justify-center items-center">
+                class="flex flex-col lg:flex-row gap-10 lg:gap-24 absolute bottom-0 lg:-bottom-12 w-full justify-center items-center">
                 <div
                     class="bg-white flex w-full lg:w-[310px] py-4 justify-center border-b-4 border-[#1DD100] rounded-3xl gap-4">
                     <img src="images/people.png" alt="">
                     <div>
-                        <h3 class="text-4xl font-bold">500k+</h3>
-                        <p class="text-lg text-gray-500">Registered users</p>
+                        <h3 class="text-2xl lg:text-4xl font-bold">500k+</h3>
+                        <p class="lg:text-lg text-gray-500">Registered users</p>
                     </div>
                 </div>
                 <div
                     class="bg-white flex w-full lg:w-[310px] py-4 justify-center border-b-4 border-[#1DD100] rounded-3xl gap-4">
                     <img src="images/ticket-cupon.png" alt="">
                     <div>
-                        <h3 class="text-4xl font-bold">1.7lacks</h3>
-                        <p class="text-lg text-gray-500">Tickets sold</p>
+                        <h3 class="text-2xl lg:text-4xl font-bold">1.7lacks</h3>
+                        <p class="lg:text-lg text-gray-500">Tickets sold</p>
                     </div>
                 </div>
                 <div
                     class="bg-white flex w-full lg:w-[310px] py-4 justify-center border-b-4 border-[#1DD100] rounded-3xl gap-4">
                     <img src="images/stoppage.png" alt="">
                     <div>
-                        <h3 class="text-4xl font-bold">80k+</h3>
-                        <p class="text-lg text-gray-500">Rental partners</p>
+                        <h3 class="text-2xl lg:text-4xl font-bold">80k+</h3>
+                        <p class="lg:text-lg text-gray-500">Rental partners</p>
                     </div>
                 </div>
             </div>
@@ -99,8 +102,215 @@
     <!-- header section end -->
 
     <!-- main section start ---------------------------------------------------->
-    <main class="container mx-auto mb-32">
+    <main>
+        <!-- best offer part -->
+        <section class="container mx-auto mb-32 lg:mt-0">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center raleway-font">Best offers for you</h2>
+            <div class="flex flex-col lg:flex-row justify-between gap-8 mt-8">
+                <div class="flex justify-between flex-1 p-12 bg-[#FFBF0F] coupon-bg rounded-3xl">
+                    <div class="flex flex-col  flex-1 ">
+                        <h3 class="text-2xl lg:text-4xl font-bold inter-font">15% OFF</h3>
+                        <p class="font-bold lg:text-lg">on your next purchase</p>
+                        <p class="lg:text-lg text-gray-700">used by January 2024</p>
+                    </div>
+                    <div class="flex flex-col justify-center pl-9">
+                        <h3 class="text-2xl lg:text-4xl font-bold raleway-font">NEW15</h3>
+                        <p class="lg:text-lg text-center text-gray-500 raleway-font">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex justify-between flex-1 p-12 bg-[#F78C9C] coupon-bg rounded-3xl">
+                    <div class="flex flex-col  flex-1 ">
+                        <h3 class="text-2xl lg:text-4xl font-bold inter-font">20% OFF</h3>
+                        <p class="font-bold lg:text-lg">on your next purchase</p>
+                        <p class="lg:text-lg text-gray-700">used by January 2024</p>
+                    </div>
+                    <div class="flex flex-col justify-center pl-9">
+                        <h3 class="text-2xl lg:text-4xl font-bold ">Couple 20</h3>
+                        <p class="lg:text-lg text-center text-gray-500">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-14 flex justify-center">
+                <button class="btn border-4 border-[#1DD100] text-[#1DD100] bg-white font-bold text-xl">See
+                    All
+                    Offers
+                </button>
+            </div>
+        </section>
 
+        <!-- booking seat part -->
+        <section id="booking-seats" class=" bg-[#F7F8F8] border-t-4 border-[#1DD100] rounded-t-[80px]">
+            <div class="container mx-auto mb-10 lg:mt-0 mt-60 pt-40 space-y-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-center raleway-font">Booking BD</h2>
+                <p class="inter-font lg:text-lg text-center">Welcome to our booking seat section. Here you can see a
+                    number
+                    of available
+                    bus,
+                    seats, and routes according to <br> your search criteria, along with departure times, durations, and
+                    total
+                    ticket prices.
+                </p>
+
+                <!-- bus status section -->
+                <div class="flex flex-col lg:flex-row justify-between flex-1 p-12 bg-white info-bg rounded-3xl gap-10">
+                    <div class="lg:flex flex-col flex-1">
+                        <!-- <h3 class="text-2xl lg:text-4xl font-bold inter-font">15% OFF</h3>
+                        <p class="font-bold lg:text-lg">on your next purchase</p>
+                        <p class="lg:text-lg text-gray-700">used by January 2024</p> -->
+                        <div class="">
+                            <div class="flex justify-between">
+                                <div class="flex items-center gap-5">
+                                    <img src="./images/bus-logo.png" alt="">
+                                    <div>
+                                        <h3 class="text-2xl lg:text-4xl font-bold raleway-font">
+                                            Greenline Poribahan</h3>
+                                        <p class="lg:text-lg text-gray-500 inter-font">Coach-009--WEB |
+                                            AC_Business
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn text-[#1DD100] lg:text-lg"><img src="./images/seat-green.png"
+                                            alt=""><span>40</span>
+                                        seats
+                                        left</button>
+                                </div>
+                            </div>
+                            <div class="space-y-6 bg-gray-100 p-7 rounded-3xl mt-5">
+                                <div class="flex justify-between border-dashed border-b-2">
+                                    <p class="lg:text-lg text-gray-500 inter-font">Route
+                                    </p>
+                                    <p class="lg:text-lg  inter-font">Dhaka-Sylhet</p>
+                                </div>
+                                <div class="flex justify-between border-dashed border-b-2">
+                                    <p class="lg:text-lg text-gray-500 inter-font">Departure Time
+                                    </p>
+                                    <p class="lg:text-lg  inter-font">9:00 PM</p>
+                                </div>
+                                <div class="flex justify-between">
+                                    <div class=" bg-gray-200 px-4 py-2 rounded-xl">
+                                        <p class="lg:text-lg text-gray-500 inter-font">Boarding Point - Laxmipur
+                                        </p>
+                                    </div>
+                                    <div class=" bg-gray-200 px-4 py-2 rounded-xl">
+                                        <p class="lg:text-lg text-gray-500 inter-font">Dropping Point - Bogura
+                                        </p>
+                                    </div>
+                                    <div class=" bg-gray-200 px-4 py-2 rounded-xl ">
+                                        <p class="lg:text-lg text-gray-500 inter-font">Est. Time - 11 Hour
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-center w-[30%] space-y-4 text-center">
+                        <img src="./images/fare.png" class="w-10 mx-auto" alt="">
+                        <h3 class="text-2xl lg:text-4xl font-bold raleway-font">550 Taka</h3>
+                        <p class="lg:text-lg  text-gray-500 raleway-font">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- seat calculation part -->
+            <div class="container mx-auto mb-32 lg:mt-0 bg-white rounded-2xl">
+                <div class="flex flex-col lg:flex-row">
+                    <div class=" flex-1 p-5 rounded-2xl">
+                        <h3 class="text-2xl lg:text-4xl font-bold raleway-font">
+                            Select Your Seat
+                        </h3>
+                        <div>
+                            <div class="flex justify-between border-dashed border-y-2 py-5 mt-5">
+                                <div class="flex gap-2">
+                                    <img src="./images/seat-gray.png" alt="">
+                                    <p class="lg:text-lg text-gray-500 inter-font">Available
+                                    </p>
+                                </div>
+                                <div class="flex gap-2">
+                                    <img src="./images/seat-green-filled.png" alt="">
+                                    <p class="lg:text-lg text-[#1DD100] inter-font">Selected
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="lg:text-lg text-gray-500 inter-font">
+                                </p>
+                                <div class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] my-5">
+                                    <img src="./images/steering.png" width="25" alt="">
+                                </div>
+                            </div>
+                            <div class="flex mb-5">
+                                <div class=" text-gray-500 px-4 py-4">
+                                    A</div>
+                                <div class="flex justify-between flex-1 gap-20">
+                                    <div class="flex justify-between mr-10 flex-1">
+                                        <div
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
+                                            A1
+                                        </div>
+                                        <div
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
+                                            A2
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between ml-10 flex-1">
+                                        <div
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
+                                            A3
+                                        </div>
+                                        <div
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
+                                            A4
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class=" text-gray-500 px-4 py-4">
+                                    B</div>
+                                <div class="flex justify-between flex-1 gap-20">
+                                    <div class="flex justify-between mr-10 flex-1">
+                                        <div
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
+                                            B1
+                                        </div>
+                                        <div
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
+                                            B2
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between ml-10 flex-1">
+                                        <div
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
+                                            B3
+                                        </div>
+                                        <div
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
+                                            B4
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-dashed border-l-2 p-5 lg:w-2/5">
+                        <h3 class="text-2xl lg:text-4xl font-bold raleway-font border-dashed border-b-2 pb-5">
+                            Select Your Seat
+                        </h3>
+                        <div class="bg-gray-100 p-5 mt-5 rounded-xl ">
+                            <div class="flex items-center justify-between border-dashed border-b-2  pb-5">
+                                <div class="indicator cursor-default">
+                                    <span class="indicator-item badge bg-[#1DD100] text-white">0+</span>
+                                    <button class="btn lg:text-lg  inter-font">Seat</button>
+                                </div>
+                                <p class=" lg:text-lg font-semibold inter-font">Class</p>
+                                <p class=" lg:text-lg font-semibold inter-font">Price</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- main section end -->
 
