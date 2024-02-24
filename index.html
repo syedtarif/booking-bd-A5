@@ -171,7 +171,7 @@
                                 </div>
                                 <div>
                                     <button class="btn text-[#1DD100] lg:text-lg"><img src="./images/seat-green.png"
-                                            alt=""><span>40</span>
+                                            alt=""><span id="seat-left">8</span>
                                         seats
                                         left</button>
                                 </div>
@@ -239,55 +239,45 @@
                                     <img src="./images/steering.png" width="25" alt="">
                                 </div>
                             </div>
-                            <div class="flex mb-5">
-                                <div class=" text-gray-500 px-4 py-4">
-                                    A</div>
-                                <div class="flex justify-between flex-1 gap-20">
-                                    <div class="flex justify-between mr-10 flex-1">
-                                        <div
-                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
-                                            A1
-                                        </div>
-                                        <div
-                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
-                                            A2
-                                        </div>
+                            <div class="flex items-center gap-5 mb-5">
+                                <button>A</button>
+                                <div class="lg:flex justify-between flex-1">
+                                    <div class="grid grid-cols-2 gap-10">
+                                        <button
+                                            class="mb-2 lg:mb-0 px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer seat-button"
+                                            id="A1">A1</button>
+                                        <button
+                                            class="mb-2 lg:mb-0 px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer seat-button"
+                                            id="A2">A2</button>
                                     </div>
-                                    <div class="flex justify-between ml-10 flex-1">
-                                        <div
-                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
-                                            A3
-                                        </div>
-                                        <div
-                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
-                                            A4
-                                        </div>
+                                    <div class="grid grid-cols-2 gap-10">
+                                        <button
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer seat-button"
+                                            id="A3">A3</button>
+                                        <button
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer seat-button"
+                                            id="A4">A4</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex">
-                                <div class=" text-gray-500 px-4 py-4">
-                                    B</div>
-                                <div class="flex justify-between flex-1 gap-20">
-                                    <div class="flex justify-between mr-10 flex-1">
-                                        <div
-                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
-                                            B1
-                                        </div>
-                                        <div
-                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
-                                            B2
-                                        </div>
+                            <div class="flex items-center gap-5 mb-5">
+                                <button>B</button>
+                                <div class="lg:flex justify-between  flex-1">
+                                    <div class="grid grid-cols-2 gap-10">
+                                        <button
+                                            class="mb-2 lg:mb-0 px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer seat-button"
+                                            id="B1">B1</button>
+                                        <button
+                                            class="mb-2 lg:mb-0 px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer seat-button"
+                                            id="B2">B2</button>
                                     </div>
-                                    <div class="flex justify-between ml-10 flex-1">
-                                        <div
-                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
-                                            B3
-                                        </div>
-                                        <div
-                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer">
-                                            B4
-                                        </div>
+                                    <div class="grid grid-cols-2 gap-10">
+                                        <button
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer seat-button"
+                                            id="B3">B3</button>
+                                        <button
+                                            class="px-16 py-4 rounded-2xl text-gray-500 font-semibold bg-[#F7F8F8] cursor-pointer seat-button"
+                                            id="B4">B4</button>
                                     </div>
                                 </div>
                             </div>
@@ -298,49 +288,54 @@
                             Select Your Seat
                         </h3>
                         <div class="bg-gray-100 p-5 mt-5 rounded-xl ">
-                            <div class="flex items-center justify-between border-dashed border-b-2  pb-5">
+                            <div class="flex items-center justify-between border-dashed border-b-2">
                                 <div class="indicator cursor-default">
-                                    <span class="indicator-item badge bg-[#1DD100] text-white">0+</span>
+                                    <span class="indicator-item badge bg-[#1DD100] text-white" id="seat-add">0</span>
                                     <button class="btn lg:text-lg  inter-font">Seat</button>
                                 </div>
                                 <p class=" lg:text-lg font-semibold inter-font">Class</p>
                                 <p class=" lg:text-lg font-semibold inter-font">Price</p>
                             </div>
+                            <div id="seats-container">
+
+                            </div>
                             <hr>
                             <div class="flex justify-between">
                                 <p class=" lg:text-lg font-semibold inter-font">Total Price</p>
-                                <p class=" lg:text-lg font-semibold inter-font">BDT <span>00</span></p>
+                                <p class=" lg:text-lg font-semibold inter-font">BDT <span id="total-price">00</span></p>
                             </div>
-                            <div class="relative flex items-center justify-center py-4">
-                                <input type="text" class="w-3/4 text-lg rounded-xl pl-5 py-4"
+                            <div class="relative flex items-center justify-center py-4" id="coupon-part">
+                                <input type="text" class="w-3/4 text-lg rounded-xl pl-5 py-4" id="input-field"
                                     placeholder="Have any coupon?">
-                                <button
+                                <button id="button-apply"
                                     class="btn bg-[#1DD100] text-white font-semibold absolute right-[4.5rem] text-xl px-4">Apply</button>
                             </div>
+                            <hr class="mt-3">
                             <div class="flex justify-between">
                                 <p class=" lg:text-lg font-semibold inter-font">Grand Total</p>
-                                <p class=" lg:text-lg font-semibold inter-font">BDT <span>00</span></p>
+                                <p class=" lg:text-lg font-semibold inter-font">BDT <span id="grand-total">00</span></p>
                             </div>
                         </div>
 
                         <!-- personal information taking field -->
                         <div class="space-y-7 mt-4">
                             <div>
-                                <p class="lg:text-lg font-semibold inter-font mb-3">Passenger Name*</p>
+                                <p class="lg:text-lg font-semibold inter-font mb-3">Passenger Name</p>
                                 <input type="text" class="border-solid border-2 w-full text-lg rounded-xl pl-5 py-4"
                                     placeholder="Enter your name">
                             </div>
                             <div>
                                 <p class="lg:text-lg font-semibold inter-font mb-3">Phone Number*</p>
                                 <input type="text" class="border-solid border-2 w-full text-lg rounded-xl pl-5 py-4"
-                                    placeholder="Enter your phone number">
+                                    placeholder="Enter your phone number" id="phone-number">
                             </div>
                             <div>
-                                <p class="lg:text-lg font-semibold inter-font mb-3">Email ID*</p>
+                                <p class="lg:text-lg font-semibold inter-font mb-3">Email ID</p>
                                 <input type="text" class="border-solid border-2 w-full text-lg rounded-xl pl-5 py-4"
                                     placeholder="Enter your email id">
                             </div>
-                            <button class="btn bg-[#1DD100] text-white font-semibold text-xl w-full">Apply</button>
+                            <button class="btn bg-[#1DD100] text-white font-semibold text-xl w-full"
+                                id="next-button">Next</button>
                             <div class="flex justify-around">
                                 <p
                                     class=" lg:text-lg text-gray-500 font-semibold inter-font underline underline-offset-1">
@@ -353,15 +348,78 @@
                     </div>
                 </div>
             </div>
+
+            <!-- modal part -->
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn hidden" onclick="my_modal_5.showModal()">open modal</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box w-11/12 max-w-5xl h-[600px]">
+                    <img src="./images/success.png" class="w-1/4 mx-auto my-14" alt="">
+                    <h3 class="font-bold text-lg text-center">Success</h3>
+                    <p class="py-4 text-center"><span class="font-bold">Thank you for Booking Our Bus Seats. We are
+                            working hard
+                            to find the best service
+                            and deals for you.</span><br>
+                        Shortly you will find a confirmation in your email.</p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <div>
+                                <button class="btn bg-[#1DD100] text-white font-semibold text-xl w-full"
+                                    id="next-button" onclick="reload()">Continue</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+            <!-- --------------------- -->
         </section>
     </main>
     <!-- main section end -->
 
     <!-- footer section start ---------------------------------------------------->
-    <footer>
-
+    <footer class="footer p-10 bg-black text-white h-full lg:h-[500px] flex flex-col">
+        <div class="w-full h-full px-2 lg:px-20 py-28">
+            <div class="flex flex-col lg:flex-row justify-between w-full items-center h-full">
+                <div>
+                    <h1 class="text-5xl font-bold raleway-font pb-8">Booking-BD</h1>
+                    <p class="inter-font text-lg text-gray-400 text-center lg:text-left">Booking-BD is a digital
+                        platform that give a best <br>
+                        experience and make
+                        your
+                        daily commuting better
+                    </p>
+                </div>
+                <div>
+                    <div>
+                        <h3 class="text-2xl lg:text-3xl font-semibold raleway-font pb-8">Download our app</h3>
+                    </div>
+                    <div class="flex border-4 gap-5 py-3 px-5 rounded-xl">
+                        <img src="./images/playstore.png" alt="">
+                        <div>
+                            <p class="text-gray-400">GETIT ON</p>
+                            <h4 class="text-xl font-semibold">Google Play</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-dashed my-10 w-full">
+            <div class="flex flex-col lg:flex-row items-center justify-between w-full">
+                <p class="inter-font text-gray-400 text-center lg:text-left pb-5">@all rights reserved, Booking-BD
+                    services
+                    limited.2024</p>
+                <div class="flex gap-10">
+                    <p class="inter-font text-lg">Terms & condition</p>
+                    <p class="inter-font text-lg">Return & refund policy</p>
+                    <p class="inter-font text-lg">Privacy policy</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- footer section end -->
+
+    <!-- script file link up -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
